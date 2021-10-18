@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: rgb(225, 98, 70);
+  color: #fff;
+  flex-flow: row wrap;
+}
+
+.header .logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header .logo a {
+  text-decoration: none;
+  color: #fff;
+}
+.header .header_links {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 2rem;
+  font-size: 25px;
+}
+
+.header .header_links li {
+  cursor: pointer;
+  padding-top: 3px;
+}
+
+.active_link {
+  border-top: 3px solid #fff;
+}
+.about_link {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+.main {
+  flex: 1;
+  padding: 0 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.main .featured_header {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.main .featured_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.featured_1,
+.featured_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+  font-size: 25px;
+}
+
+.featured_1 > div,
+.featured_2 > div {
+  width: 50%;
+}
+
+.main .featured_items img {
+  width: 400px;
+  height: 400px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.menu_item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgb(253, 246, 236);
+  padding: 20px 15px;
+  border-radius: 25px;
+}
+
+.menu_item img {
+  width: 400px;
+  height: 400px;
+  align-self: center;
+}
+
+.menu_item .item_header {
+  text-align: center;
+  font-size: 35px;
+}
+
+.ingredients,
+.instructions {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 1rem;
+}
+.ingredients ul,
+.instructions ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 50px;
+}
+
+.instructions ul {
+  list-style: decimal;
+}
+
+.footer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 10px;
+  color: rgb(71, 71, 71);
+  font-size: 20px;
+}
